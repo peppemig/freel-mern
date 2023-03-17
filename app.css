@@ -8,3 +8,11 @@ body {
   text-decoration: none;
   color: inherit;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
