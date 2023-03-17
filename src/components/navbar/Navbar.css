@@ -37,10 +37,6 @@
     font-weight: bold;
 }
 
-.text {
-
-}
-
 .dot {
     color: white;
 }
@@ -99,4 +95,35 @@ hr {
     justify-content: space-between;
     font-weight: 300;
     color: gray;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.userImg {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.options {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    color: gray;
+    gap: 10px;
+    width: 200px;
+    font-weight: 300;
 }

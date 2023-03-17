@@ -3,3 +3,8 @@
 body {
     font-family: 'Poppins', cursive;
   }
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
