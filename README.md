@@ -6,5 +6,4 @@ Freel is a online marketplace to get in touch with freelancers and get work done
 - Frontend: React (Vite) + Standard CSS
 - Backend: not started yet...
 
-![freel](https://user-images.githubusercontent.com/120139042/225917430-933c7ab5-677b-43c8-82ea-6e42cfc2aa50.png)
-
+![freelslider](https://user-images.githubusercontent.com/120139042/226072585-78c53422-7c77-466d-b6d1-86b286adaff4.png)
