@@ -1,0 +1,39 @@
+.slider {
+    position: relative;
+    padding-left: 3%;
+}
+
+.arrowNext {
+    position: absolute;
+    top:50%;
+    right: 2%
+}
+
+.arrowPrev {
+    position: absolute;
+    top:50%;
+    left: 2%
+}
+
+.arrowPrev > button {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: black;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+}
+
+.arrowNext > button {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: black;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+}
+
