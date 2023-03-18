@@ -1,6 +1,6 @@
 .slider {
     position: relative;
-    padding-left: 3%;
+    margin-bottom: 60px;
 }
 
 .arrowNext {
@@ -37,3 +37,128 @@
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
 }
 
+.features {
+    background-color: #ecf4ff;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+}
+
+.featuresContainer {
+    display: flex;
+    max-width: 1400px;
+    align-items: center;
+    gap: 200px
+}
+
+.rightItem {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.leftItem {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+    width: 100%; 
+}
+
+.leftItem > h1 {
+    font-weight: 500;
+    margin-bottom: 40px;
+    color: #283d5a;
+}
+
+.leftItem > p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #5077ad;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.x {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: #283d5a;
+}
+
+.x > img {
+    height: 24px;
+    width: 24px;
+}
+
+.business {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #003f91;
+}
+
+.businessContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10px
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.business {
+    padding: 20px;
+    margin-bottom: 60px;
+}
+
+.x2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 700;
+    color: white;
+}
+
+.x2 > img {
+    height: 24px;
+    width: 24px;
+}
+
+.businessButton {
+    font-family: inherit;
+    width: 200px;
+    padding: 10px 0px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    background-color: #5DA2FD;
+    color: white;
+    cursor: pointer;
+}
+
+.businessButton:hover {
+    font-family: inherit;
+    width: 200px;
+    padding: 10px 0px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #5DA2FD;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
