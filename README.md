@@ -7,3 +7,5 @@ Freel is a online marketplace to get in touch with freelancers and get work done
 - Backend: not started yet...
 
 ![freelslider](https://user-images.githubusercontent.com/120139042/226072585-78c53422-7c77-466d-b6d1-86b286adaff4.png)
+
+![gigspage](https://user-images.githubusercontent.com/120139042/226204864-01d73bee-14bd-4906-98ce-00672b9865aa.png)
