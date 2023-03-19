@@ -1,0 +1,113 @@
+.gigs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s all ease;
+    width: 100%;
+}
+
+.containerGigs {
+    justify-content: start;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+}
+
+.gigsList {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    gap: 60px;
+}
+
+.breadcrumbs {
+    font-size: 13px;
+    font-weight: 300;
+    color: #555;
+}
+
+.catDesc {
+    font-weight: 300;
+    color: #999;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+}
+
+.minInput {
+    padding: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.maxInput {
+    padding: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+    font-family: inherit;
+    border-radius: 5px;
+}
+
+.applyButton {
+    border: none;
+    background-color: lightblue;
+    padding: 8px 20px;
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.menuRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+.sortBy {
+    color: #555;
+    font-weight: 300;
+}
+
+.sortType {
+    font-weight: 500;
+}
+
+.rightMenuSort {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid lightblue;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: darkgray;
+    z-index: 999;
+    font-weight: 500;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+    -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 0.5s; /* Firefox < 16 */
+     -ms-animation: fadein 0.5s; /* Internet Explorer */
+      -o-animation: fadein 0.5s; /* Opera < 12.1 */
+         animation: fadein 0.5s;
+}

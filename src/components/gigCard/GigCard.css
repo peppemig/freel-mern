@@ -1,0 +1,100 @@
+.GigCard {
+  border: 1px solid lightblue;
+  height: 370px;
+  width: 400px;
+  flex-direction: column;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.GigCard:hover {
+  transition: all 300ms ease;
+  transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2); 
+  box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.2);
+}
+
+.imgTop {
+  height: 50%;
+  display: flex;
+}
+
+.imgTop > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.descBottom {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user > img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  object-fit: cover;
+}
+
+.user {
+  padding-bottom: 10px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
+.stars > img {
+  width: 16px;
+  height: 16px;
+}
+
+hr {
+  width: 100%;
+  background-color: lightblue;
+  border: none;
+  height: 1px;
+}
+
+.descSpan {
+  font-size: 14px;
+}
+
+.usernameSpan {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.separator {
+  width: 100%;
+  background-color: red;
+  height: 1px;
+  display: flex;
+}
+
+.heart > img {
+  width: 20px;
+  height: 20px;
+}
+
+.priceSection {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.startingAt {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.priceItem {
+  font-weight: bold;
+}
