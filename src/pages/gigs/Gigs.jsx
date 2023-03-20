@@ -19,8 +19,8 @@ const Gigs = () => {
       <div className="containerGigs">
         <div className="top">
           <span className='breadcrums'>FREEL {'>'} GRAPHICS & DESIGN</span>
-          <h1>AI Artists</h1>
-          <p className='catDesc'>Explore the boundaries of art and technology with Freel's AI artists</p>
+          <h1 style={{marginBottom: '0px'}}>AI Artists</h1>
+          <p style={{marginTop: '0px'}} className='catDesc'>Explore the boundaries of art and technology with Freel's AI artists</p>
 
           <div className="menu">
             <div className="menuLeft">

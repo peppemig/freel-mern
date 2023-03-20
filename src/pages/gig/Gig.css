@@ -1,0 +1,104 @@
+.gigSinglePage {
+    display: flex;
+    transition: 0.5s all ease;
+    justify-content: center;
+}
+
+.gigSingleContainer {
+    display: flex;
+    width: 1400px;
+    justify-content: center;
+}
+
+.leftGigClass {
+    display: flex;
+    flex: 2;
+    flex-direction: column;
+}
+
+.rightGigClass {
+    display: flex;
+    flex: 1
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+
+.starImg {
+    height: 20px;
+    width: 20px;
+}
+
+.userInfoImg {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.imagesSlider {
+    display: flex;
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px
+}
+
+.sliderImage {
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+
+.sellerProfilePic {
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.aboutTheSeller {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px
+}
+
+.sellerDetails {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.sellerRectangle {
+    margin-top: 10px;
+    display: flex;
+    border: 1px lightblue solid;
+    height: 300px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.from {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+}
+
+.leftRect {
+    display: flex;
+    flex: 1;
+    background-color: red;
+    justify-content: start;
+}
+
+.rightRect {
+    display: flex;
+    flex: 1;
+    background-color: blue;
+    justify-content: start;
+}
