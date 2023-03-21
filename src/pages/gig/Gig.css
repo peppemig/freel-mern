@@ -65,7 +65,8 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    gap: 20px
+    gap: 20px;
+    padding-bottom: 30px;
 }
 
 .sellerDetails {
@@ -78,7 +79,7 @@
     margin-top: 10px;
     display: flex;
     border: 1px lightblue solid;
-    height: 300px;
+    height: auto;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -92,13 +93,91 @@
 .leftRect {
     display: flex;
     flex: 1;
-    background-color: red;
     justify-content: start;
+    flex-direction: column;
 }
 
 .rightRect {
     display: flex;
     flex: 1;
-    background-color: blue;
     justify-content: start;
+    flex-direction: column;
+}
+
+.contactMeButton {
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid lightblue;
+    padding: 10px 10px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.rightGigClass {
+    border: 1px solid lightblue;
+    display: flex;
+    height: max-content;
+    margin-left: 20px;
+    position: sticky;
+    top: 160px;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.titleAndPrice {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titleAndPrice > h1 {
+    font-size: 20px;
+}
+
+.titleAndPrice > span {
+    font-size: 24px;
+}
+
+.deliveryAndRevisions {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.checksList {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 5px;
+    color: darkgray;
+}
+
+.continueButton {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: lightblue;
+    color: white;
+    font-size: inherit;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continueButton:hover {
+    background-color: white;
+    color: lightblue;
+    border: 1px solid lightblue;
+    transition: all 200ms ease;
+}
+
+.iconCheck {
+    color: green;
 }

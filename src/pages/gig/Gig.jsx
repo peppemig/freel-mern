@@ -2,7 +2,7 @@ import React from 'react'
 import "./Gig.css"
 import star from "../../../public/img/star.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft, faArrowRight, faCheck, faClockRotateLeft, faRecycle } from '@fortawesome/free-solid-svg-icons'
 
 const Gig = () => {
   return (
@@ -49,22 +49,72 @@ const Gig = () => {
                 <img className='starImg' src={star} alt="" />
                 <img className='starImg' src={star} alt="" />
               </div>
-              <button>Contact Me</button>
+              <button className='contactMeButton'>Contact Me</button>
             </div>
           </div>
 
           <div className="sellerRectangle">
 
-            <div className="leftRect"></div>
+            <div className="leftRect">
+              <div className="rectSection">
+                <h2 style={{paddingLeft:'10px' ,marginBottom: '0px', fontSize: '16px'}}>From</h2>
+                <span style={{paddingLeft: '10px'}}>USA</span>
+              </div>
 
-            <div className="rightRect"></div>
+              <div className="rectSection">
+                <h2 style={{paddingLeft:'10px' ,marginBottom: '0px', fontSize: '16px'}}>Avg. response time</h2>
+                <span style={{paddingLeft: '10px'}}>4 hours</span>
+              </div>
+
+              <div className="rectSection">
+                <h2 style={{paddingLeft:'10px' ,marginBottom: '0px', fontSize: '16px'}}>Language</h2>
+                <span style={{paddingLeft: '10px'}}>English</span>
+              </div>
+            </div>
+
+            <div className="rightRect">
+
+              <div className="rectSection">
+                <h2 style={{marginBottom: '0px', fontSize: '16px'}}>Member since</h2>
+                <span>Aug 2022</span>
+              </div>
+
+              <div className="rectSection">
+                <h2 style={{marginBottom: '0px', fontSize: '16px'}}>Last delivery</h2>
+                <span>1 day</span>
+              </div>
+
+            </div>
+
+            <hr />
+
+            <p style={{paddingLeft: '10px'}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, rerum optio! Ad eum totam beatae odio perspiciatis enim fuga! In ipsa inventore iste.</p>
 
           </div>
           
         </div>
         
         <div className="rightGigClass">
+          <div className="titleAndPrice">
+            <h1>1 AI generated image</h1>
+            <span>€59.99</span>
+          </div>
 
+          <p style={{color: 'darkgray'}}>I will create a unique high quality AI generated image based on a description that you give me</p>
+        
+          <div className="deliveryAndRevisions">
+            <span><FontAwesomeIcon icon={faClockRotateLeft}/> 2 Days Delivery</span>
+            <span><FontAwesomeIcon icon={faRecycle}/> 3 Revisions</span>
+          </div>
+
+          <div className="checksList">
+            <span><FontAwesomeIcon className='iconCheck' icon={faCheck}/> Prompt writing</span>
+            <span><FontAwesomeIcon className='iconCheck' icon={faCheck}/> Artwork delivery</span>
+            <span><FontAwesomeIcon className='iconCheck' icon={faCheck}/> Image upscaling</span>
+            <span><FontAwesomeIcon className='iconCheck' icon={faCheck}/> Additional design</span>
+          </div>
+
+          <button className='continueButton'>Continue</button>
         </div>
 
       </div>
