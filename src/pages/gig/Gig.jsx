@@ -1,10 +1,43 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Gig.css"
 import star from "../../../public/img/star.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeft, faArrowRight, faCheck, faClockRotateLeft, faRecycle } from '@fortawesome/free-solid-svg-icons'
 
 const Gig = () => {
+
+  const images = [
+    "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/1462935/pexels-photo-1462935.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  ]
+
+  const [slideNumber, setSlideNumber] = useState(0)
+  const [disabledPrev, setDisabledPrev] = useState(false)
+  const [disabledNext, setDisabledNext] = useState(false)
+  const [buttonClassPrev, setButtonClassPrev] = useState('imgSliderButtonEnabled')
+  const [buttonClassNext, setButtonClassNext] = useState('imgSliderButtonEnabled')
+
+  useEffect(() => {
+    if (slideNumber === 0) {
+      setDisabledPrev(true)
+      setButtonClassPrev('imgSliderButtonDisabled')
+    } else {
+      setDisabledPrev(false)
+      setButtonClassPrev('imgSliderButtonEnabled')
+    }
+  })
+
+  useEffect(() => {
+    if (slideNumber === 2) {
+      setDisabledNext(true)
+      setButtonClassNext('imgSliderButtonDisabled')
+    } else {
+      setDisabledNext(false)
+      setButtonClassNext('imgSliderButtonEnabled')
+    }
+  })
+
   return (
     <dig className="gigSinglePage">
       <div className="gigSingleContainer">
@@ -25,9 +58,13 @@ const Gig = () => {
           </div>
 
           <div className="imagesSlider">
-            <FontAwesomeIcon style={{cursor: 'pointer'}} icon={faArrowLeft} />
-            <img className='sliderImage' src="https://images.pexels.com/photos/1462935/pexels-photo-1462935.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="" />
-            <FontAwesomeIcon style={{cursor: 'pointer'}} icon={faArrowRight} />
+            <button disabled={disabledPrev} style={{backgroundColor: 'transparent', border: 'none'}}>
+            <FontAwesomeIcon className={buttonClassPrev} icon={faArrowLeft} onClick={() => slideNumber === 0 ? console.log('no more images') : setSlideNumber(slideNumber - 1)}/>
+            </button>
+            <img className='sliderImage' src={images[slideNumber]} alt="" />
+            <button disabled={disabledNext} style={{backgroundColor: 'transparent', border: 'none'}}>
+            <FontAwesomeIcon className={buttonClassNext} icon={faArrowRight} onClick={() => slideNumber === 2 ? console.log('no more images') : setSlideNumber(slideNumber + 1)}/>
+            </button>
           </div>
 
           <h2 style={{marginBottom: '0px'}}>About this gig</h2>
